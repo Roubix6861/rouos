@@ -87,7 +87,8 @@ end
 -- input
 
 function GPU.getKey()
-    local event, button = os.pullEvent("key")
+    local event, button = os.pullEvent()
+if event == key then
     return button
 end
 
